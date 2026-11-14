@@ -60,6 +60,20 @@ def as_frame(subjects, bodies) -> pd.DataFrame:
 
 _NAMES_CACHE: dict[int, np.ndarray] = {}
 
+# Human-readable labels for engineered features shown in explanations
+FEATURE_LABELS = {
+    "has_ip_url": "link to raw IP address", "num_shortener_urls": "shortened link", "num_suspicious_tld": "risky domain ending",
+    "url_with_at": "'@' inside link", "http_not_https": "insecure http link", "url_many_subdomains": "deep subdomain link",
+    "num_urls": "many links", "num_unique_domains": "links to many domains", "max_url_len_log": "very long link",
+    "kw_urgency": "urgent language", "kw_threat": "threatening language", "kw_credential": "asks for credentials",
+    "kw_financial": "money / payment lure", "kw_action": "pushes you to click", "kw_generic_greeting": "generic greeting",
+    "caps_ratio": "lots of CAPITALS", "subject_caps_ratio": "CAPITALS in subject", "exclamations": "many exclamation marks",
+    "subject_exclamation": "'!' in subject", "currency_symbols": "currency symbols", "has_html_tags": "HTML formatting",
+    "num_emails": "email addresses in body", "digit_ratio": "many numbers", "body_len_log": "message length",
+    "subject_len": "subject length", "num_words_log": "word count", "avg_word_len": "word length",
+    "unique_word_ratio": "vocabulary variety", "questions": "many questions", "subject_is_reply": "fake Re:/Fwd:",
+}
+
 
 def feature_names(vectorizer: ColumnTransformer) -> np.ndarray:
     """Column names in the vectorizer's output order: word__<ngram>, char__<ngram>, feat__<feature>."""
@@ -92,7 +106,9 @@ def explain_linear(vectorizer: ColumnTransformer, coef: np.ndarray, X: pd.DataFr
         if name.startswith("char__"):
             continue  # char n-grams are not human readable
         kind, _, token = name.partition("__")
-        if token in {"urltoken", "numtoken", "emailtoken", "moneytoken"}:
+        if kind == "feat":
+            token = FEATURE_LABELS.get(token, token.replace("_", " "))
+        elif token in {"urltoken", "numtoken", "emailtoken", "moneytoken"}:
             token = {"urltoken": "<link>", "numtoken": "<number>", "emailtoken": "<email address>",
                      "moneytoken": "<money amount>"}[token]
         out.append({"token": token, "type": "feature" if kind == "feat" else "phrase", "weight": round(float(vals[i]), 3)})

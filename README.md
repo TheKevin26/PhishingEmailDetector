@@ -7,6 +7,11 @@ HTML, attachments, SPF/DKIM/DMARC, Reply-To and display-name spoofing).
 
 One detection engine serves **every email system** through a REST API and three ready-made connectors.
 
+<p align="center">
+  <img src="docs/screenshot-dark.png" alt="PhishGuard web UI in dark mode flagging a PayPal phishing email with a 100% score and listing the reasons" width="760">
+</p>
+<p align="center"><sub>Web UI (<code>python -m phishguard.cli serve</code>): verdict, score, reasons and suspicious terms for each email</sub></p>
+
 ```
                  ┌──────────────────────────────────────────┐
                  │        PhishGuard Detection Engine        │
