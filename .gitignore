@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+secrets/
+.state/
+data/raw/
+data/processed/
+# DistilBERT weights are 256 MB (GitHub limit is 100 MB): publish them as a GitHub Release asset instead
+models/transformer/
+models_baseline/
+reports/*.npy
+reports/baseline_public_only/*.npy
+dist/

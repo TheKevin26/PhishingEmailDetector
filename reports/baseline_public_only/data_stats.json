@@ -1,0 +1,38 @@
+{
+  "raw_rows": 82486,
+  "after_empty_filter": 82330,
+  "conflicting_label_texts": 0,
+  "after_dedup": 74512,
+  "train_rows": 59609,
+  "train_phishing": 29229,
+  "val_rows": 7451,
+  "val_phishing": 3653,
+  "test_rows": 7452,
+  "test_phishing": 3654,
+  "per_source": {
+    "CEAS_08": {
+      "0": 17107,
+      "1": 15748
+    },
+    "Enron": {
+      "0": 14389,
+      "1": 13870
+    },
+    "Ling": {
+      "0": 2399,
+      "1": 457
+    },
+    "Nazario": {
+      "0": 0,
+      "1": 1526
+    },
+    "Nigerian_Fraud": {
+      "0": 0,
+      "1": 3261
+    },
+    "SpamAssasin": {
+      "0": 4081,
+      "1": 1674
+    }
+  }
+}

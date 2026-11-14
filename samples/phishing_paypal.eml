@@ -1,0 +1,34 @@
+From: "PayPal Security" <service@paypal-account-verify.xyz>
+Reply-To: support-desk@mail-recovery.top
+To: user@example.com
+Subject: URGENT: Your account has been suspended
+Date: Sat, 14 Nov 2026 09:12:44 +0000
+Message-ID: <a1b2c3@paypal-account-verify.xyz>
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=paypal-account-verify.xyz; dkim=none; dmarc=fail
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="BOUNDARY"
+
+--BOUNDARY
+Content-Type: text/plain; charset="utf-8"
+
+Dear Customer,
+
+We detected unusual activity on your account and it has been temporarily suspended.
+To restore access you must verify your identity within 24 hours or your account will be permanently closed.
+
+Verify now: http://192.168.13.7/paypal/login.php
+
+PayPal Security Team
+
+--BOUNDARY
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear Customer,</p>
+<p>We detected unusual activity on your account and it has been temporarily <b>suspended</b>.</p>
+<p>To restore access you must verify your identity within 24 hours or your account will be permanently closed.</p>
+<p><a href="http://192.168.13.7/paypal/login.php">https://www.paypal.com/signin</a></p>
+<p>PayPal Security Team</p>
+</body></html>
+
+--BOUNDARY--

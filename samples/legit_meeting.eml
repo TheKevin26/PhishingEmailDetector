@@ -1,0 +1,22 @@
+From: Priya Sharma <priya.sharma@acme-corp.com>
+To: dev-team@acme-corp.com
+Subject: Notes from Tuesday's project sync
+Date: Wed, 11 Nov 2026 16:03:10 +0530
+Message-ID: <98765@acme-corp.com>
+Authentication-Results: mx.acme-corp.com; spf=pass; dkim=pass header.d=acme-corp.com; dmarc=pass
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hi team,
+
+Thanks for joining the sync yesterday. Quick recap:
+
+- Backend API is on track for the 20th
+- Rahul will share the updated test plan by Friday
+- Design review moved to next Monday, same time
+- Next sync moved to Wednesday 3pm
+
+The slides are in the shared project folder. Let me know if I missed anything.
+
+Best,
+Priya

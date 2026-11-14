@@ -1,0 +1,267 @@
+[
+  {
+    "model": "classic",
+    "correct": 23,
+    "total": 32,
+    "phishing_caught": "14/16",
+    "legit_false_alarms": "7/16",
+    "cases": [
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.9822,
+        "ml": 0.8322,
+        "auth": null,
+        "subject": "Action required: password expires today"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 1.0,
+        "ml": 0.9848,
+        "auth": null,
+        "subject": "You have received a document to review and sign"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 1.0,
+        "ml": 1.0,
+        "auth": null,
+        "subject": "KYC update pending - account will be blocked"
+      },
+      {
+        "expected": "phishing",
+        "got": "legitimate",
+        "score": 0.471,
+        "ml": 0.471,
+        "auth": null,
+        "subject": "Quick favour"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 1.0,
+        "ml": 0.9995,
+        "auth": null,
+        "subject": "Your membership is on hold"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.9425,
+        "ml": 0.9925,
+        "auth": "pass",
+        "subject": "Mandatory: re-validate your mailbox"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 1.0,
+        "ml": 0.9819,
+        "auth": "fail",
+        "subject": "There's a problem with your order"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.9092,
+        "ml": 0.9092,
+        "auth": null,
+        "subject": "Updated remittance details"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 1.0,
+        "ml": 0.9979,
+        "auth": null,
+        "subject": "Copyright infringement on your account"
+      },
+      {
+        "expected": "phishing",
+        "got": "legitimate",
+        "score": 0.1668,
+        "ml": 0.1668,
+        "auth": null,
+        "subject": "Remote data entry position - $450/day"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.9978,
+        "ml": 0.9978,
+        "auth": null,
+        "subject": "Your wallet will be deactivated"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.9552,
+        "ml": 0.9552,
+        "auth": null,
+        "subject": "Rakesh shared 'Q4 Bonus Allocation.xlsx' with you"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.999,
+        "ml": 0.999,
+        "auth": null,
+        "subject": "Package held at warehouse"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 1.0,
+        "ml": 1.0,
+        "auth": null,
+        "subject": "Your Apple ID has been locked"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.9851,
+        "ml": 0.9851,
+        "auth": null,
+        "subject": "Refund of Rs 15,490 approved"
+      },
+      {
+        "expected": "phishing",
+        "got": "phishing",
+        "score": 0.8389,
+        "ml": 0.8389,
+        "auth": null,
+        "subject": "Missed meeting - recording available"
+      },
+      {
+        "expected": "legitimate",
+        "got": "phishing",
+        "score": 0.5186,
+        "ml": 0.9686,
+        "auth": "pass",
+        "subject": "Your Amazon.in order #403-1234567-1234567 has shipped"
+      },
+      {
+        "expected": "legitimate",
+        "got": "phishing",
+        "score": 0.9686,
+        "ml": 0.9686,
+        "auth": null,
+        "subject": "Your Amazon.in order #403-1234567-1234567 has shipped"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.4677,
+        "ml": 0.9177,
+        "auth": "pass",
+        "subject": "[GitHub] A new SSH key was added to your account"
+      },
+      {
+        "expected": "legitimate",
+        "got": "phishing",
+        "score": 0.5494,
+        "ml": 0.9994,
+        "auth": "pass",
+        "subject": "Security alert"
+      },
+      {
+        "expected": "legitimate",
+        "got": "phishing",
+        "score": 0.9994,
+        "ml": 0.9994,
+        "auth": null,
+        "subject": "Security alert"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.0,
+        "ml": 0.0,
+        "auth": null,
+        "subject": "Re: Interview schedule for Thursday"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.3501,
+        "ml": 0.8001,
+        "auth": "pass",
+        "subject": "Your Swiggy order receipt"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.422,
+        "ml": 0.422,
+        "auth": null,
+        "subject": "Your weekly learning summary"
+      },
+      {
+        "expected": "legitimate",
+        "got": "phishing",
+        "score": 0.5477,
+        "ml": 0.9977,
+        "auth": "pass",
+        "subject": "Transaction alert"
+      },
+      {
+        "expected": "legitimate",
+        "got": "phishing",
+        "score": 0.9977,
+        "ml": 0.9977,
+        "auth": null,
+        "subject": "Transaction alert"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.0488,
+        "ml": 0.0488,
+        "auth": null,
+        "subject": "Diwali plans"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.0004,
+        "ml": 0.0004,
+        "auth": null,
+        "subject": "Updated slides for Monday"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.0,
+        "ml": 0.3962,
+        "auth": "pass",
+        "subject": "Cloud recording - Weekly Sync is now available"
+      },
+      {
+        "expected": "legitimate",
+        "got": "phishing",
+        "score": 0.5055,
+        "ml": 0.5055,
+        "auth": null,
+        "subject": "Booking Confirmation PNR 4512378890"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.3588,
+        "ml": 0.8088,
+        "auth": "pass",
+        "subject": "Rohan Mehta wants to connect"
+      },
+      {
+        "expected": "legitimate",
+        "got": "legitimate",
+        "score": 0.0027,
+        "ml": 0.0027,
+        "auth": null,
+        "subject": "Project report deadline extended"
+      }
+    ]
+  }
+]

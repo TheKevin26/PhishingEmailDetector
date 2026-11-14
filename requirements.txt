@@ -1,0 +1,30 @@
+# Core / training
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+scipy>=1.13
+joblib>=1.4
+xgboost>=2.1
+beautifulsoup4>=4.12
+tldextract>=5.1
+
+# Transformer model (install torch with CUDA from https://pytorch.org for GPU)
+torch>=2.4
+transformers>=4.44
+accelerate>=0.33
+
+# API
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic>=2.8
+
+# Connectors
+google-api-python-client>=2.140
+google-auth-oauthlib>=1.2
+msal>=1.30
+requests>=2.32
+
+# Tests
+pytest>=8.3
+httpx>=0.27

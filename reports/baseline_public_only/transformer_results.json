@@ -1,0 +1,94 @@
+{
+  "args": {
+    "epochs": 2,
+    "batch_size": 16,
+    "lr": 3e-05,
+    "max_len": 256
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "accuracy": 0.9926,
+      "precision": 0.9956,
+      "recall": 0.9893,
+      "f1": 0.9924,
+      "false_positive_rate": 0.0042,
+      "confusion_matrix": {
+        "tn": 3782,
+        "fp": 16,
+        "fn": 39,
+        "tp": 3614
+      },
+      "roc_auc": 0.9998
+    },
+    {
+      "epoch": 2,
+      "accuracy": 0.9958,
+      "precision": 0.9964,
+      "recall": 0.9951,
+      "f1": 0.9958,
+      "false_positive_rate": 0.0034,
+      "confusion_matrix": {
+        "tn": 3785,
+        "fp": 13,
+        "fn": 18,
+        "tp": 3635
+      },
+      "roc_auc": 0.9999
+    }
+  ],
+  "validation": {
+    "accuracy": 0.9958,
+    "precision": 0.9964,
+    "recall": 0.9951,
+    "f1": 0.9958,
+    "false_positive_rate": 0.0034,
+    "confusion_matrix": {
+      "tn": 3785,
+      "fp": 13,
+      "fn": 18,
+      "tp": 3635
+    },
+    "roc_auc": 0.9999
+  },
+  "test": {
+    "accuracy": 0.9937,
+    "precision": 0.9959,
+    "recall": 0.9912,
+    "f1": 0.9936,
+    "false_positive_rate": 0.0039,
+    "confusion_matrix": {
+      "tn": 3783,
+      "fp": 15,
+      "fn": 32,
+      "tp": 3622
+    },
+    "roc_auc": 0.9998,
+    "per_source": {
+      "CEAS_08": {
+        "n": 3286,
+        "accuracy": 0.9976
+      },
+      "Enron": {
+        "n": 2826,
+        "accuracy": 0.9947
+      },
+      "Ling": {
+        "n": 285,
+        "accuracy": 0.9825
+      },
+      "Nazario": {
+        "n": 153,
+        "accuracy": 0.9673
+      },
+      "Nigerian_Fraud": {
+        "n": 326,
+        "accuracy": 0.9969
+      },
+      "SpamAssasin": {
+        "n": 576,
+        "accuracy": 0.9774
+      }
+    }
+  }
+}

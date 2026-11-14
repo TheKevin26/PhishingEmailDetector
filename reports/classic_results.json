@@ -1,0 +1,94 @@
+{
+  "validation": {
+    "logreg": {
+      "accuracy": 0.9932,
+      "precision": 0.9921,
+      "recall": 0.9941,
+      "f1": 0.9931,
+      "false_positive_rate": 0.0076,
+      "confusion_matrix": {
+        "tn": 4164,
+        "fp": 32,
+        "fn": 24,
+        "tp": 4029
+      },
+      "roc_auc": 0.9997,
+      "train_seconds": 311.4
+    },
+    "linear_svm": {
+      "accuracy": 0.9935,
+      "precision": 0.9929,
+      "recall": 0.9938,
+      "f1": 0.9933,
+      "false_positive_rate": 0.0069,
+      "confusion_matrix": {
+        "tn": 4167,
+        "fp": 29,
+        "fn": 25,
+        "tp": 4028
+      },
+      "roc_auc": 0.9997,
+      "train_seconds": 166.0
+    },
+    "xgboost": {
+      "accuracy": 0.991,
+      "precision": 0.9897,
+      "recall": 0.9921,
+      "f1": 0.9909,
+      "false_positive_rate": 0.01,
+      "confusion_matrix": {
+        "tn": 4154,
+        "fp": 42,
+        "fn": 32,
+        "tp": 4021
+      },
+      "roc_auc": 0.9996,
+      "train_seconds": 343.8
+    }
+  },
+  "selected": "linear_svm",
+  "test": {
+    "accuracy": 0.9935,
+    "precision": 0.9929,
+    "recall": 0.9938,
+    "f1": 0.9933,
+    "false_positive_rate": 0.0069,
+    "confusion_matrix": {
+      "tn": 4167,
+      "fp": 29,
+      "fn": 25,
+      "tp": 4028
+    },
+    "roc_auc": 0.9997,
+    "per_source": {
+      "CEAS_08": {
+        "n": 3286,
+        "accuracy": 0.996
+      },
+      "Enron": {
+        "n": 2826,
+        "accuracy": 0.9901
+      },
+      "Ling": {
+        "n": 286,
+        "accuracy": 0.993
+      },
+      "Modern_Synthetic": {
+        "n": 797,
+        "accuracy": 1.0
+      },
+      "Nazario": {
+        "n": 153,
+        "accuracy": 0.9935
+      },
+      "Nigerian_Fraud": {
+        "n": 326,
+        "accuracy": 0.9969
+      },
+      "SpamAssasin": {
+        "n": 575,
+        "accuracy": 0.9843
+      }
+    }
+  }
+}
