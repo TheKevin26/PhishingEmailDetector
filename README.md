@@ -192,4 +192,4 @@ Measured on CPU (i5-13450HX), including the explanation: **classic ≈ 13 ms per
 Code: [MIT](LICENSE). Dataset: Champa et al., *Phishing Email Curated Datasets*, Zenodo, CC BY 4.0. It is not redistributed
 here; `scripts/download_data.py` fetches it from the source.
 - Label 1 in Enron, Ling and SpamAssassin includes generic spam, so the model also flags aggressive marketing spam.
-- Header rules are heuristics. Tune their weights in `header_rules.py` for your environment.
+- Header rules are heuristics. Tune their weights in `header_rules.py` for your environment. 
